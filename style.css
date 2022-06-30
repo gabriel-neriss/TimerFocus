@@ -1,0 +1,242 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+:root {
+
+  --fc-font-color: #323238;
+  --ff-font-timer:'Roboto', sans-serif;
+  --bc-events-color-cardsons: #02799D;
+  --bc-dark-cardsons: #0A3442;
+  --bc-cards: #E1E1E6;
+  --bc-dark-buttons: #29292E;
+  --bc-dark-body: #121214;
+
+  font-size: 62.5%;
+
+
+}
+
+
+
+#darkTheme img {
+
+  position: fixed;
+  right: 6.4rem;
+  top: 6.4rem;
+  width: 4.4rem;
+  cursor: pointer;
+
+
+
+}
+
+
+#timer{
+
+
+  font-family: var(--ff-font-timer);
+  font-weight: 500;
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+  color: var(--fc-font-color);
+  
+   display: flex;
+   margin-top: 2.5rem;
+
+}
+
+#controlsTimer {
+
+  display: flex;
+  gap: 8rem ;
+
+  width: 31.2rem;
+  height: 4.8rem;
+  margin-top: 4rem;
+ 
+
+}
+
+#controlsTimer button {
+
+  border: none;
+  background-color: white;
+  
+
+}
+
+.stop {
+
+  display: none;
+}
+
+
+#firstBlock{
+
+  margin-right: 19rem;
+
+}
+
+
+
+
+
+.cardSons {
+
+  width: 35rem;
+  height: 33.6rem;
+  
+
+}
+
+.cardSons button {
+
+  width: 138px;
+  height: 152px;
+
+  
+  border-radius: 24px;
+  border: none;
+
+  border: none;
+  background-color: var(--bc-cards);
+
+  margin-right: 3.2rem;
+  margin-bottom: 3.2rem;
+
+}
+
+
+/* unput range */
+
+ .range  {
+
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: 38px;
+  width: 90px;
+  height: 4px;
+  left: 770px;
+  border-radius: 5px;
+  background-color:#323238;
+  
+}
+
+.range::-webkit-slider-thumb{
+
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #323238;
+
+
+}
+
+
+main {
+  
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30rem;
+  
+
+}
+
+/* click cardsons */
+
+#forest.blue, #rain.blue, #coffeShop.blue, #fireplace.blue {
+
+  background-color: var(--bc-events-color-cardsons);
+  fill: #FFFFFF;
+
+}
+
+#forest.blue input, #rain.blue input, #coffeShop.blue input, #fireplace.blue input {
+
+  background-color: #FFFFFF;
+
+}
+ 
+#forest.blue  .range::-webkit-slider-thumb,
+#rain.blue  .range::-webkit-slider-thumb,
+#coffeShop.blue .range::-webkit-slider-thumb,
+#fireplace.blue .range::-webkit-slider-thumb {
+
+  background-color: #FFFFFF;
+
+}
+
+/* Dark mode */
+
+
+body.dark {
+
+  background-color: var(--bc-dark-body) ;
+  
+
+}
+
+#lightMode.dark {
+
+  display: none;
+}
+
+#timer.dark {
+
+  color:  #FFFFFF;
+}
+
+
+#controlsTimer.dark svg {
+
+  fill: #C4C4CC;
+
+}
+
+#controlsTimer.dark button {
+
+  border: none;
+  background-color: var(--bc-dark-body);
+}
+
+.cardSons.dark button  {
+
+  background-color: var(--bc-dark-buttons) ;
+  
+}
+
+.cardSons.dark input {
+
+  background-color: #FFFFFF;
+
+}
+
+
+.cardSons.dark .range::-webkit-slider-thumb {
+
+  background-color: #FFFFFF;
+
+}
+
+
+.cardSons.dark svg {
+
+ fill: white;
+
+}
+
+#forest.blueDark, #rain.blueDark, #coffeShop.blueDark, #fireplace.blueDark {
+
+  background-color: var(--bc-dark-cardsons);
+} 
+
+
+
