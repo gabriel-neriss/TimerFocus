@@ -1,12 +1,6 @@
-import {
+import { minutes, minutesDisplay, secondsDisplay} from './index.js'
 
-  minutes,
-  minutesDisplay,
-  secondsDisplay, 
-  
-
-} from './index.js'
-
+let stopTimer
 
 
 
@@ -16,11 +10,9 @@ import {
 function updateTimerDisplay(minutes, seconds) {
   minutesDisplay.textContent = String(minutes).padStart(2, "0")
   secondsDisplay.textContent = String(seconds).padStart(2, "0")
-  }
+  } 
   
-  
-  
-  function timerMinutes () {
+function timerMinutes () {
   
   stopTimer = setTimeout (function () {
   
@@ -51,23 +43,21 @@ function updateTimerDisplay(minutes, seconds) {
   
   }
   
-  function upadateMinutes (newMinutes) {
+function upadateMinutes (newMinutes) {
     minutes =  newMinutes 
   
   }
   
-  function addMinutes () {
+function addMinutes () {
   
   upadateMinutes(minutesDisplay.textContent = Number (minutesDisplay.textContent) + 5)
   updateTimerDisplay(minutes, 0)
   
   
-  
-  
   }
   
   
-  function decreaseTimer (){
+  function decreaseTimer () {
   
   
   let minutes = Number (minutesDisplay.textContent)
@@ -91,6 +81,7 @@ function updateTimerDisplay(minutes, seconds) {
   
 export {
 
+  stopTimer,
   updateTimerDisplay,
   timerMinutes,
   addMinutes,

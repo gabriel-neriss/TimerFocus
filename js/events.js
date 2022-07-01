@@ -17,6 +17,7 @@ import {
 
 
 
+export function initEvents () {
 
 // Events cardSons 
 
@@ -97,10 +98,7 @@ buttonFireplace.addEventListener ('click', function (){
 
 }) 
 
-
-
 // eventos Dark Mode 
-
 
 iconDarkMode.addEventListener('click', function () {
 
@@ -118,3 +116,6 @@ iconLightMode.addEventListener ('click' , function () {
   iconDarkMode.style.display = 'none'
 
 } )
+
+
+}

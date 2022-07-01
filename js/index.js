@@ -1,6 +1,6 @@
-import {} from './controls.js'
-import {} from './events.js'
-import {} from './timer.js'
+import { initControls } from './controls.js'
+import { initEvents } from './events.js'
+
 
 
 const body = document.querySelector ('body')
@@ -27,10 +27,9 @@ const volCoffeShop = document.querySelector('#volCoffeShop')
 const volFireplace = document.querySelector('#volFireplace')
 
 
-let stopTimer
 let minutes
-const minutesDisplay = document.querySelector ('.minutes')
-const secondsDisplay = document.querySelector ('.seconds')
+let minutesDisplay = document.querySelector ('.minutes')
+let secondsDisplay = document.querySelector ('.seconds')
 
 
 // sounds buttom 
@@ -45,6 +44,10 @@ audioForest.loop = true
 audioRain.loop = true
 audioCoffeShop.loop = true
 audioFireplace.loop = true
+
+initControls()
+initEvents ()
+
 
 
 export {
@@ -65,7 +68,6 @@ export {
   volRain, 
   volCoffeShop,
   volFireplace,
-  stopTimer,
   minutes,
   minutesDisplay,
   secondsDisplay, 
