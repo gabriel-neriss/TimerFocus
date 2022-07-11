@@ -4,6 +4,14 @@ import {
   buttonStop, 
   buttonMostaddTimer,
   buttonDecreaseTimer,
+  volForest,
+  volRain, 
+  volCoffeShop,
+  volFireplace,
+  audioForest,
+  audioRain,
+  audioCoffeShop, 
+  audioFireplace,
   pressButton
 
 } from './index.js'
@@ -11,16 +19,13 @@ import {
 
 
 import {
-
-  updateTimerDisplay,
+  
   timerMinutes,
   addMinutes,
   decreaseTimer,
   stopTimer
   
-
 } from './timer.js'
-
 
 
 
@@ -30,7 +35,7 @@ import {
 export function initControls () {
 
 
-  buttonPlay.addEventListener ('click', function () {
+    buttonPlay.addEventListener ('click', function () {
 
     timerMinutes ()
     buttonStop.style.display = 'block'
@@ -54,7 +59,6 @@ export function initControls () {
     buttonMostaddTimer.addEventListener ('click', function () {
     
     addMinutes()
-    updateTimerDisplay (minutes, 0)
     pressButton.play()
     
     })
@@ -62,11 +66,38 @@ export function initControls () {
     buttonDecreaseTimer .addEventListener ('click', function () {
     
     decreaseTimer ()
-    updateTimerDisplay (minutes, 0)
     pressButton.play()
     
     
     })
+
+    // controls volum 
+
+    volForest.addEventListener ('input', function () {
+
+      audioForest.volume = volForest.value
+
+    })
+
+
+    volRain.addEventListener ('input', function () {
+
+      audioRain.volume = volRain.value
+
+    })
+
+    volCoffeShop.addEventListener ('input', function () {
+
+      audioCoffeShop.volume = volCoffeShop.value
+
+    })
+
+    volFireplace.addEventListener ('input', function () {
+
+      audioFireplace.volume = volFireplace.value
+
+    })
+
 
 
 }

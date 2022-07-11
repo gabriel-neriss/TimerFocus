@@ -43,7 +43,8 @@ function timerMinutes () {
   
   }
   
-function upadateMinutes (newMinutes) {
+function updateMinutes (newMinutes) {
+  
     minutes =  newMinutes 
   
   }
@@ -65,7 +66,7 @@ function addMinutes () {
   
   if ( minutes > 5 ) {
   
-    upadateMinutes(minutesDisplay.textContent = Number (minutesDisplay.textContent) - 5)
+    updateMinutes(minutesDisplay.textContent = Number (minutesDisplay.textContent) - 5)
     updateTimerDisplay(minutes, 0)
     
   

@@ -5,8 +5,13 @@ import {
   buttonCoffeShop, 
   buttonFireplace, 
   body,
+  cardSons,
   iconLightMode,
   iconDarkMode,
+  volForest,
+  volRain, 
+  volCoffeShop,
+  volFireplace,
   audioForest,
   audioRain,
   audioCoffeShop, 
@@ -17,12 +22,14 @@ import {
 
 
 
+
 export function initEvents () {
 
 // Events cardSons 
 
 buttonForest.addEventListener ('click', function () {
 
+  
   forest.classList.toggle ('blue')
  
   rain.classList.remove ('blue')
@@ -97,6 +104,33 @@ buttonFireplace.addEventListener ('click', function (){
 
 
 }) 
+
+volForest.addEventListener ('click', () => {
+
+  forest.classList.toggle ('blue')
+  
+})
+
+volRain.addEventListener ('click', () => {
+
+  rain.classList.toggle ('blue')
+  
+})
+
+
+
+volCoffeShop.addEventListener ('click', () => {
+
+  coffeShop.classList.toggle ('blue')
+  
+})
+
+volFireplace.addEventListener ('click', () => {
+
+  fireplace.classList.toggle ('blue')
+  
+})
+
 
 // eventos Dark Mode 
 
