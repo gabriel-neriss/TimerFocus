@@ -27,7 +27,7 @@ const volCoffeShop = document.querySelector('#volCoffeShop')
 const volFireplace = document.querySelector('#volFireplace')
 
 
-let minutes
+
 let minutesDisplay = document.querySelector ('.minutes')
 let secondsDisplay = document.querySelector ('.seconds')
 
@@ -38,6 +38,7 @@ const audioForest = new Audio ("sons/florest.wav")
 const audioRain = new Audio ("sons/rain.wav")
 const audioCoffeShop = new Audio ("sons/coffeshop.wav")
 const audioFireplace = new Audio ("sons/fireplace.wav")
+const audioAlert = new Audio ("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/kichen-timer.mp3?raw=true")
 const pressButton = new Audio ("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/button-press.wav?raw=true")
 
 audioForest.loop = true
@@ -68,7 +69,6 @@ export {
   volRain, 
   volCoffeShop,
   volFireplace,
-  minutes,
   minutesDisplay,
   secondsDisplay, 
   
@@ -78,6 +78,7 @@ export {
   audioRain,
   audioCoffeShop, 
   audioFireplace,
+  audioAlert,
   pressButton,
    
 

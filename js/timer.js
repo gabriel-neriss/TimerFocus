@@ -1,4 +1,4 @@
-import { minutes, minutesDisplay, secondsDisplay} from './index.js'
+import { minutesDisplay, secondsDisplay, audioAlert } from './index.js'
 
 let stopTimer
 
@@ -18,21 +18,29 @@ function timerMinutes () {
   
     let seconds = Number (secondsDisplay.textContent)
     let minutes = Number (minutesDisplay.textContent)
-  
-    updateTimerDisplay(minutes, 0)
-  
-    if (minutes <= 0 ) {
+    let isFinished = minutes <= 0 && seconds <= 0
+
+    
+
+    if (isFinished) {
+      
+      updateTimerDisplay(minutes, 0)
+      timerEnd()
+      
       return
-    }
+
+    } 
+
    
     if (seconds <= 0) {
-      seconds = 59
+      seconds = 60
       --minutes
   
   
     }
   
     updateTimerDisplay(minutes, String(seconds - 1))
+   
   
     timerMinutes ()
   
@@ -43,16 +51,15 @@ function timerMinutes () {
   
   }
   
-function updateMinutes (newMinutes) {
-  
-    minutes =  newMinutes 
-  
-  }
+function timerEnd () {
+
+  audioAlert.play()
+
+}
   
 function addMinutes () {
   
-  upadateMinutes(minutesDisplay.textContent = Number (minutesDisplay.textContent) + 5)
-  updateTimerDisplay(minutes, 0)
+  updateTimerDisplay(minutesDisplay.textContent = Number (minutesDisplay.textContent) + 5, 0)
   
   
   }
@@ -66,8 +73,8 @@ function addMinutes () {
   
   if ( minutes > 5 ) {
   
-    updateMinutes(minutesDisplay.textContent = Number (minutesDisplay.textContent) - 5)
-    updateTimerDisplay(minutes, 0)
+    updateTimerDisplay(minutesDisplay.textContent = Number (minutesDisplay.textContent) - 5, 0)
+    
     
   
   } else {
@@ -86,6 +93,7 @@ export {
   updateTimerDisplay,
   timerMinutes,
   addMinutes,
-  decreaseTimer
+  decreaseTimer,
+  timerEnd
 
 }
