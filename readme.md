@@ -13,6 +13,8 @@ Timer com aplicação da técnica pomodoro de concentração através do tempo q
 - Multiplataforma
 - Aumentar e diminuir 5 minutos
 - Música para concentração
+- Som sonoro quando o timer zera
+- Sons quando os botões são acionados
 
 ## Tecnologias utilizadas
 
