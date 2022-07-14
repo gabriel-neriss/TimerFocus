@@ -1,6 +1,6 @@
 # ⌨️ Sobre o projeto 
 
-Timer com aplicação de uma técnica de concentração através do tempo que consiste na utilização de um cronômetro para dividir o trabalho em períodos de 25 minutos, separados por breves intervalos.
+Timer com aplicação da técnica pomodoro de concentração através do tempo que consiste na utilização de um cronômetro para dividir o trabalho em períodos de 25 minutos, separados por breves intervalos.
 
 
 ## 💻📲 Demonstração
