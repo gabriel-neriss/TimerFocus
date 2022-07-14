@@ -5,7 +5,8 @@ Timer com aplicação da técnica pomodoro de concentração através do tempo q
 
 ## 💻📲 Demonstração
 
-![imageProjFocusTimer](https://user-images.githubusercontent.com/87450820/179044462-37901c81-27c2-458e-9844-4569d1024fba.png)
+![imageProjFocusTimer](https://user-images.githubusercontent.com/87450820/179115731-23feec3c-7374-4991-9c23-2455f26cf243.png)
+
 
 ## Funcionalidades
 
