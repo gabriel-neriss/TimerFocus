@@ -321,6 +321,14 @@ body.dark {
     height: 3px;
 
   }
+  
+   .range::-webkit-slider-thumb {
+
+    width: 13px;
+    height: 13px;
+
+  }
+
 
 
 }
