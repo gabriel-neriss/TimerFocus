@@ -317,7 +317,8 @@ body.dark {
 
   .cardSons input {
 
-    display: none;
+    width: 80px;
+    height: 3px;
 
   }
 
