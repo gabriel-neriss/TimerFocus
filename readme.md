@@ -7,6 +7,8 @@ Timer com aplicação da técnica pomodoro de concentração através do tempo q
 
 ![IM2](https://user-images.githubusercontent.com/87450820/179116952-261815fe-456e-4fb5-93b5-12d911b390a9.jpeg)
 
+Utilize: https://gabriel-neriss.github.io/TimerFocus/
+
 
 ## Funcionalidades
 
