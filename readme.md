@@ -15,7 +15,7 @@ Timer com aplicação da técnica pomodoro de concentração através do tempo q
 
 - Temas dark e light
 - Multiplataforma
-- Aumentar e diminuir 5 minutos
+- Aumentar ou diminuir 5 minutos
 - Música para concentração
 - Som sonoro quando o timer zera
 - Sons quando os botões são acionados
