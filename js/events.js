@@ -22,7 +22,7 @@ export function initEvents() {
   // Events cardSons
 
   buttonForest.addEventListener("click", function () {
-    forest.classList.toggle("blue");
+    forest.classList.add("blue");
 
     rain.classList.remove("blue");
     coffeShop.classList.remove("blue");
@@ -37,7 +37,7 @@ export function initEvents() {
   });
 
   buttonRain.addEventListener("click", function () {
-    rain.classList.toggle("blue");
+    rain.classList.add("blue");
 
     forest.classList.remove("blue");
     coffeShop.classList.remove("blue");
@@ -52,7 +52,7 @@ export function initEvents() {
   });
 
   buttonCoffeShop.addEventListener("click", function () {
-    coffeShop.classList.toggle("blue");
+    coffeShop.classList.add("blue");
 
     forest.classList.remove("blue");
     rain.classList.remove("blue");
@@ -67,7 +67,7 @@ export function initEvents() {
   });
 
   buttonFireplace.addEventListener("click", function () {
-    fireplace.classList.toggle("blue");
+    fireplace.classList.add("blue");
 
     forest.classList.remove("blue");
     rain.classList.remove("blue");
